@@ -1,0 +1,36 @@
+schema_version = 4
+revision = 0
+
+[wording]
+source = "../../../content/de/ch/wording.toml"
+
+[options]
+cl_style = "harvard"
+language = "de-ch"
+pages = 4
+generate_cl = true
+application_date = "2026-09"
+# Render look: one entry of cvl/cl/harvard/style.toml substyles. This leaf is the
+# left-rule cover letter; records without the field render as frame.
+cl_substyle = "left-rule"
+
+[job]
+id = "showcase-de-ch"
+title = "Innovation, Technologie & Strategie"
+organization = ""
+location = "Schweiz | hybrid | remote"
+source = "ccvl showcase"
+url = ""
+description = "Aufgaben an der Schnittstelle von Innovationsmanagement, Technologie, Strategie und Finance."
+connections = ""
+company_context = "Target-neutrales, öffentliches Arbeitsbeispiel und offene Bewerbung."
+notes = "Der Inhalt beschreibt Julian Corbet; neue Nutzer ersetzen ihn ausschliesslich mit eigenen belegten Fakten."
+
+[job.cl_recipient]
+name = ""
+title = ""
+company = ""
+address_line_1 = ""
+address_line_2 = ""
+
+# Add [cl] below only for substyle-specific wording overrides.

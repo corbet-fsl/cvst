@@ -1,0 +1,23 @@
+# Harvard CV family: the default. Registry for the CV substyle axis:
+# substyles lists every position in order and the first renders when a record
+# selects nothing. empty_substyles are slots without a design.
+id = "harvard"
+api = 1
+settings_adapter = "document-v1"
+documents = ["cv"]
+supports_locales = ["de-ch", "en-ch"]
+pages = [2, 3, 4]
+substyles = ["d-plus", "standard", "compact", "aligned", "timeline"]
+default_pages = 4
+defaults = "../../shared/harvard/defaults.toml"
+
+[paper.defaults]
+de-ch = "a4"
+en-ch = "a4"
+
+[paper.sizes.a4]
+size_pt = [595.2756, 841.8898]
+label = "A4"
+
+[paper.sizes.a4.settings.page]
+paper = "a4"
