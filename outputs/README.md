@@ -15,6 +15,8 @@ the approved profile header until a design is defined:
 | [`videos/`](videos/README.md) | `videos` | 16:9 landscape still frame |
 | [`presentations/`](presentations/README.md) | `presentations` | 16:9 landscape slide |
 | [`portfolios/`](portfolios/README.md) | `portfolios` | portrait A4 |
+| [`chatbot/`](chatbot/README.md) | `chatbot` | 16:9 landscape chat screen |
+| [`audio/`](audio/README.md) | `audio` | portrait A4 |
 
 `ccvl.json` declares every document under `documents`, keyed by the document
 name that also names its folder in `workspace_groups.outputs`.

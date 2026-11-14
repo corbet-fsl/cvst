@@ -1,0 +1,11 @@
+schema_version = 4
+revision = 0
+
+[options]
+language = "en-ch"
+pages = 1
+chatbot_style = "scaffold"
+chatbot_substyle = "standard"
+
+# Scaffold only: no chatbot fields defined yet.
+[chatbot]
