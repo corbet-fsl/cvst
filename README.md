@@ -18,6 +18,10 @@ would ship; that package is prepared by layout only and not published. The crate
 not published either (the data is about 50 MB, above the crates.io limit; trimming
 the showcase renders is a later decision).
 
+## Canonical home
+
+cvst is the canonical home of style contract validation (`validate_contract`) and of the styles. The copy in ccvl-core is removed in phase 2, when ccvl depends on cvst. Dependencies use caret ranges; nothing is vendored or pinned.
+
 ## Tests
 
 `cargo test` validates every style contract. With `CVST_CCVL_DIR` set to a `ccvl`
