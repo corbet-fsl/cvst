@@ -1,0 +1,31 @@
+[package]
+name = "cvst"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.94"
+description = "CareerVector style library: style catalogue, contracts, Typst templates and style assets"
+license = "FSL-1.1-ALv2"
+readme = "README.md"
+repository = "https://git.corbet.ch/corbet-fsl/cvst"
+keywords = ["cv", "typst", "styles", "templates"]
+categories = ["template-engine"]
+build = "build.rs"
+# The plain data files (outputs/, .agent/typst/) are shipped as-is next to the crate.
+include = ["/src", "/build.rs", "/outputs", "/.agent/typst", "/README.md", "/LICENSE.md", "/LICENSES"]
+
+[dependencies]
+anyhow = "1.0"
+cletter = "0.4.3"
+regex = "1.12"
+serde_json = "1.0"
+toml = "1.1"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+doc_markdown = "allow"
