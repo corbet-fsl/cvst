@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "generator": "ccid render v1",
+  "tool_revision": "",
+  "manifest_sha256": "8c121764e800e1972a41c66df9ec53e6f6aa5ecc1fb5aecc7bd9bfa3d0e68d79",
+  "jobs": {
+    "verify": {
+      "job": "verify",
+      "scheduler": "forgejo",
+      "checks": [
+        "rust"
+      ],
+      "workflow": "ci",
+      "command": [
+        "ccid:run-declared-checks"
+      ],
+      "runs_on": "linux",
+      "archive_inputs": true
+    }
+  }
+}

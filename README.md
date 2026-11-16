@@ -1,5 +1,9 @@
 # cvst
 
+<!-- ccid:security:begin (rendered by ccid render; do not edit by hand) -->
+**Security and dependencies:** watched by Renovate (with OSV vulnerability alerts); an update is merged only when its tests pass. See the [security policy](SECURITY.md).
+<!-- ccid:security:end -->
+
 The CareerVector style library: style catalogue, contracts, Typst templates and
 style assets, split out of `ccvl` with their git history.
 
