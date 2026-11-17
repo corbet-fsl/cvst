@@ -46,9 +46,9 @@ dependencies = [
 
 [[package]]
 name = "cletter"
-version = "0.4.3"
+version = "0.4.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4ba3d6afb327e3519485aaa341809a7464b6376d1f8d9dc25268f7c71e30b263"
+checksum = "a84c79c43458c01a14f25b8a8b9f6b7da71078bffde6e41389eb4a5c475c5d52"
 dependencies = [
  "cdate",
  "cink",
