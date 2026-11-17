@@ -3,7 +3,8 @@
 //!
 //! The data files keep their repository layout (`outputs/<document>/<style>/...` and
 //! `.agent/typst/`). Text files are embedded in the crate ([`file`]); binary assets
-//! (PDF, PNG, fonts) are plain files under [`STYLES_ROOT`].
+//! (PDF, PNG, fonts) are not part of the published crate; in a repository checkout they are plain
+//! files under [`STYLES_ROOT`].
 
 use std::collections::BTreeSet;
 

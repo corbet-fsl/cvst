@@ -10,8 +10,9 @@ repository = "https://git.corbet.ch/corbet-fsl/cvst"
 keywords = ["cv", "typst", "styles", "templates"]
 categories = ["template-engine"]
 build = "build.rs"
-# The plain data files (outputs/, .agent/typst/) are shipped as-is next to the crate.
-include = ["/src", "/build.rs", "/outputs", "/.agent/typst", "/README.md", "/LICENSE.md", "/LICENSES"]
+# Only the text files (toml, typ, md, json) ship: the build embeds them. Showcase PDF/PNG renders and the
+# fonts stay in the repository (fonts come from ctypst `document-fonts`).
+include = ["/src", "/build.rs", "/outputs/**/*.toml", "/outputs/**/*.typ", "/outputs/**/*.md", "/.agent/typst/**/*.typ", "/.agent/typst/**/*.toml", "/.agent/typst/**/*.md", "/.agent/typst/**/*.json", "/README.md", "/LICENSE.md", "/LICENSES"]
 
 [dependencies]
 anyhow = "1.0"
