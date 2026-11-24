@@ -14,4 +14,4 @@ same 4 × 5 style and substyle grid as the CV and the cover letter.
 
 The intended purpose is a slide presentation. Fonts, composition, content fields and
 any further pages are open decisions. Build one leaf with
-`bash ./ccvl build-output presentations en-ch`.
+`bash ./cv build-output presentations en-ch`.

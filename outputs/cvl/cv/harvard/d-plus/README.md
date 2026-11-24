@@ -30,5 +30,5 @@ Archivo font, so new content still needs measurement and visual review.
 | en-ch | [PDF](en/ch/pdf/cv-2.pdf) | [PDF](en/ch/pdf/cv-3.pdf) | [PDF](en/ch/pdf/cv-4.pdf) |
 
 ```sh
-bash ./ccvl build-cv en-ch 4 --style harvard --substyle d-plus
+bash ./cv build-cv en-ch 4 --style harvard --substyle d-plus
 ```

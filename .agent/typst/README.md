@@ -78,7 +78,7 @@ Letters import the cletter facade from the engine package's generated
 `correspondence.typ` is not in the repository. Every ccvl Typst engine adds it
 to the engine package and registers the cletter, cnice, cdate and cink Typst
 packages embedded in the crates linked into ccvl
-(`ccvl_core::render::with_packages`). Its single line glob imports
+(`ccvl_engine::render::with_packages`). Its single line glob imports
 `@preview/cletter:<linked version>`; Typst exports imported names, so styles
 never name a library version, and no library source is copied here.
 Rendering stays offline.
@@ -95,17 +95,17 @@ material and explicit choices; a possible spelling match is not proof of error.
 
 ### Staying on the latest release
 
-`Cargo.toml` and `.agent/core/Cargo.toml` require cletter and ctypst as semver
+`Cargo.toml` and the engine manifest require cletter and ctypst as semver
 ranges (`0.4.2` means at least 0.4.2 and below 0.5). cletter in turn requires
 cnice, cdate and cink as ranges, and `cletter::typst::packages()` pins its
 Typst imports to whichever compatible releases Cargo resolved. To move to the
 latest compatible releases, run `cargo update` (or
 `cargo update -p cletter -p cnice -p cdate -p cink -p ctypst`), rebuild with
-`bash ./ccvl setup --from-source`, run `bash ./ccvl check`, and commit
+`bash ./cv setup --from-source`, run `bash ./cv check`, and commit
 `Cargo.lock`. No Typst source changes. A new incompatible release line, such
 as cletter 0.5, needs a deliberate requirement change.
 
 While a required release is not yet on crates.io, the root `Cargo.toml` lists
 its source repository under `[patch.crates-io]`. Cargo ignores that section
-when ccvl-core is packaged, so its published manifest keeps plain ranges.
+when the engine is packaged, so its published manifest keeps plain ranges.
 Remove each entry once its version is published and update the lock again.

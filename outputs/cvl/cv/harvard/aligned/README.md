@@ -15,7 +15,7 @@ changing fonts or title structure requires another visual check.
 | en-ch | [PDF](en/ch/pdf/cv-2.pdf) | [PDF](en/ch/pdf/cv-3.pdf) | [PDF](en/ch/pdf/cv-4.pdf) |
 
 ```sh
-bash ./ccvl build-cv en-ch 4 --style harvard --substyle aligned
+bash ./cv build-cv en-ch 4 --style harvard --substyle aligned
 ```
 
 [D+](../d-plus/README.md) develops this further by redistributing space within

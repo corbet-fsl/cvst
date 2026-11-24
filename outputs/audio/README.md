@@ -14,4 +14,4 @@ so the engine discovers, builds and checks this document type with the same
 
 The intended purpose is generated audio, such as a song. The generator, content
 fields and output format are open decisions. Build one leaf with
-`bash ./ccvl build-output audio en-ch`.
+`bash ./cv build-output audio en-ch`.

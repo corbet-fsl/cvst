@@ -24,7 +24,7 @@ bullets and stations. Text is never shortened to fit.
 | en-ch | [D+](d-plus/en/ch/pdf/cv-2.pdf) | [D+](d-plus/en/ch/pdf/cv-3.pdf) | [D+](d-plus/en/ch/pdf/cv-4.pdf) |
 
 ```sh
-bash ./ccvl build-cv en-ch 4 --style cluster --substyle d-plus
+bash ./cv build-cv en-ch 4 --style cluster --substyle d-plus
 ```
 
 Pages 2–4 come from `../harvard/src/entries-*.typ` through Harvard's

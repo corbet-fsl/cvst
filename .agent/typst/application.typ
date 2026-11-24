@@ -37,7 +37,7 @@
     message: "wording.source must be " + repr(expected) + "; sharing is scoped to the same document, style and locale",
   )
   let shared = toml(read(style-root + "/content/" + language + "/" + country + "/wording.toml"))
-  let manifest = json(read("/ccvl.json"))
+  let manifest = json(read("/cv.json"))
   assert(
     shared.len() == 1 and shared.keys().first() in manifest.documents,
     message: "shared wording must contain only one document table such as [cv] or [cl]; nested sources and cross-document content are forbidden",

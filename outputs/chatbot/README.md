@@ -14,4 +14,4 @@ the engine discovers, builds and checks this document type with the same
 
 The intended purpose is a chatbot that answers a recruiter's questions. Its
 runtime, content fields and output format are open decisions. Build one leaf
-with `bash ./ccvl build-output chatbot en-ch`.
+with `bash ./cv build-output chatbot en-ch`.

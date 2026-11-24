@@ -1,5 +1,5 @@
 # Harvard CV contract: the frozen measurement and layout budgets every CV
-# substyle (standard, compact) satisfies. Moved from ccvl.json documents.cv;
+# substyle (standard, compact) satisfies. Moved from cv.json documents.cv;
 # the engine reads this file instead of the manifest.
 
 id = "harvard"

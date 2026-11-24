@@ -18,5 +18,5 @@ the approved profile header until a design is defined:
 | [`chatbot/`](chatbot/README.md) | `chatbot` | 16:9 landscape chat screen |
 | [`audio/`](audio/README.md) | `audio` | portrait A4 |
 
-`ccvl.json` declares every document under `documents`, keyed by the document
+`cv.json` declares every document under `documents`, keyed by the document
 name that also names its folder in `workspace_groups.outputs`.

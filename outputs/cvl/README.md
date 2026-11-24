@@ -102,7 +102,7 @@ Harvard's station and five-line-summary contracts apply only to Harvard.
 Each document offers four styles with five substyles each. Like save slots
 in a game, positions without a design yet are kept as named slots
 (`slot-<n>`): they hold the grid's order and render nothing until a new
-design fills them. `bash ./ccvl list-styles` shows the grid with its designed
+design fills them. `bash ./cv list-styles` shows the grid with its designed
 styles, its slots and the defaults.
 
 ## Compare the designs
@@ -138,13 +138,13 @@ nondefault papers add their name to the PDF filename, preserving the default
 showcase. Unsupported choices fail instead of shrinking text or adding pages.
 
 ```sh
-bash ./ccvl build-cv en-ch 4 --style harvard --substyle d-plus
-bash ./ccvl build-cv en-ch 4 --style cluster --substyle d-plus
-bash ./ccvl build-cl en-ch --style harvard --substyle frame
-bash ./ccvl build-cv de-ch 4 --style harvard --substyle standard --paper a4
-bash ./ccvl list-documents
-bash ./ccvl list-styles
-bash ./ccvl compare harvard/d-plus cluster/d-plus
+bash ./cv build-cv en-ch 4 --style harvard --substyle d-plus
+bash ./cv build-cv en-ch 4 --style cluster --substyle d-plus
+bash ./cv build-cl en-ch --style harvard --substyle frame
+bash ./cv build-cv de-ch 4 --style harvard --substyle standard --paper a4
+bash ./cv list-documents
+bash ./cv list-styles
+bash ./cv compare harvard/d-plus cluster/d-plus
 ```
 
 Use [the style-creation skill](../../.agent/skills/ccvl-style/SKILL.md),
@@ -158,9 +158,9 @@ research, evidence and tailored wording remain downstream.
 On a development/CI host with the published ccvl runtime, Poppler and jq:
 
 ```sh
-bash ./ccvl build
+bash ./cv build
 bash .agent/scripts/render-previews.sh
-bash ./ccvl public-check
+bash ./cv public-check
 ```
 
 The script enumerates registered outputs and renders changed PDFs at 96 dpi
@@ -168,6 +168,6 @@ into their adjacent `preview/` directory. Unchanged PDFs reuse previews when
 the rasterizer and rendering settings match and every image is intact; local
 cache records live in `.agent/cache/previews/`. It consumes the actual PDFs; it does not
 invent mockups. Inspect every changed page at full resolution as well as in
-this comparison; `bash ./ccvl compare` renders any variants side by side into
+this comparison; `bash ./cv compare` renders any variants side by side into
 one review PDF ([guide](../../.agent/docs/compare.md)). A shorter PDF's surplus page previews are removed after a
 successful refresh. Remove obsolete previews if entire page presets are removed.

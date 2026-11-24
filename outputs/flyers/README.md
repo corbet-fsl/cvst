@@ -14,4 +14,4 @@ same 4 × 5 style and substyle grid as the CV and the cover letter.
 
 The intended purpose is a printed one-page flyer. Fonts, composition, content fields and
 any further pages are open decisions. Build one leaf with
-`bash ./ccvl build-output flyers en-ch`.
+`bash ./cv build-output flyers en-ch`.
