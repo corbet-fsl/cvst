@@ -5,31 +5,48 @@
 <!-- ccid:security:end -->
 
 The CareerVector style library: style catalogue, contracts, Typst templates and
-style assets, split out of `ccvl` with their git history.
+style assets, split out of `ccvl` with their git history. It is published on
+crates.io as [`cvst`](https://crates.io/crates/cvst).
 
 ## Layout
 
 - `outputs/<document>/<style>/` — style trees with `contract.toml`, `scaffold.toml`,
   `style.toml`, substyles, Typst sources, content records and the checked-in showcase.
+  Twelve styles carry a contract: `cvl/cv/{cluster,harvard,modern,onepager}`,
+  `cvl/cl/harvard`, and a header-only `scaffold` for audio, chatbot, flyers,
+  portfolios, presentations, videos and web.
 - `.agent/typst/` — shared Typst templates and fonts.
 - `src/` — the Rust crate: `catalogue()`, `Style::contract()`, `load_contract()`,
-  `validate_contract()`, plus `file()`/`files()` for the embedded text files.
+  `validate_contract()`, `normalize_locale()`, plus `file()`/`files()` for the embedded
+  text files.
 
-Packaging: a Rust crate that embeds the text files (TOML, Typst, Markdown) and
-exposes the whole tree as plain files under `STYLES_ROOT`. Binary assets (PDF, PNG,
-fonts) are not embedded. The directory layout is also what an npm or JSR package
-would ship; that package is prepared by layout only and not published. The crate is
-not published either (the data is about 50 MB, above the crates.io limit; trimming
-the showcase renders is a later decision).
+Packaging: the crate embeds the text files (TOML, Typst, Markdown, JSON), about
+100 KB. Binary assets (showcase PDF and PNG renders, fonts) stay in the repository
+and are not published; fonts come from ctypst's `document-fonts`. `STYLES_ROOT` is
+the crate's source directory, so the binary files are only there in a repository
+checkout. The directory layout is also what an npm or JSR package would ship; that
+package is not published.
+
+## Users
+
+`ccvl` depends on cvst (feature `core`, also pulled in by `render` and `doc`) and
+re-exports `validate_contract` and `normalize_locale`. CareerVector's CLI still
+renders from its own workspace copy of the style trees (`careervector-cli/outputs/`
+and `.agent/typst/`), not from this crate's files. Until it reads them from cvst,
+keep both identical (see Tests).
 
 ## Canonical home
 
-cvst is the canonical home of style contract validation (`validate_contract`) and of the styles. The copy in ccvl-core is removed in phase 2, when ccvl depends on cvst. Dependencies use caret ranges; nothing is vendored or pinned.
+cvst is the canonical home of style contract validation (`validate_contract`) and of
+the styles. Dependencies use caret ranges; nothing is vendored or pinned.
 
 ## Tests
 
-`cargo test` validates every style contract. With `CVST_CCVL_DIR` set to a `ccvl`
-checkout, it also proves every file is byte-identical to the one in `ccvl`.
+`cargo test` loads and validates every style contract in the catalogue. With
+`CVST_COPY_DIR` set to a directory that holds a copy of `outputs/` and
+`.agent/typst/` (today `careervector-cli/` in a CareerVector checkout), it also
+checks that every file is byte-identical to the copy. CI cannot see that private
+repository, so this check runs only locally.
 
 ## Licence
 
