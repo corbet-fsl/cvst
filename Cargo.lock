@@ -46,9 +46,9 @@ dependencies = [
 
 [[package]]
 name = "cletter"
-version = "0.4.4"
+version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a84c79c43458c01a14f25b8a8b9f6b7da71078bffde6e41389eb4a5c475c5d52"
+checksum = "690d85d3cb3412de2b537a2379c1b046fde7a689897db8f126fc56eca9ed4439"
 dependencies = [
  "cdate",
  "cink",
@@ -69,7 +69,7 @@ dependencies = [
 
 [[package]]
 name = "cvst"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "anyhow",
  "cletter",

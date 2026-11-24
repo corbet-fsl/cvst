@@ -1,6 +1,6 @@
 [package]
 name = "cvst"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 rust-version = "1.94"
 description = "CareerVector style library: style catalogue, contracts, Typst templates and style assets"
@@ -16,7 +16,7 @@ include = ["/src", "/build.rs", "/outputs/**/*.toml", "/outputs/**/*.typ", "/out
 
 [dependencies]
 anyhow = "1.0"
-cletter = "0.4.4"
+cletter = "0.5"
 regex = "1.12"
 serde_json = "1.0"
 toml = "1.1"
