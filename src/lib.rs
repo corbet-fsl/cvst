@@ -124,6 +124,28 @@ mod tests {
     }
 
     #[test]
+    fn catalogue_lists_every_contract_on_disk() {
+        fn walk(dir: &std::path::Path, out: &mut BTreeSet<String>) {
+            for entry in std::fs::read_dir(dir).unwrap() {
+                let path = entry.unwrap().path();
+                if path.is_dir() {
+                    walk(&path, out);
+                } else if path.file_name().is_some_and(|n| n == "contract.toml") {
+                    let rel = path.parent().unwrap().strip_prefix(STYLES_ROOT).unwrap();
+                    out.insert(rel.to_string_lossy().replace('\\', "/"));
+                }
+            }
+        }
+        let mut on_disk = BTreeSet::new();
+        walk(
+            &std::path::Path::new(STYLES_ROOT).join("outputs"),
+            &mut on_disk,
+        );
+        let embedded: BTreeSet<String> = catalogue().into_iter().map(|s| s.dir).collect();
+        assert_eq!(embedded, on_disk);
+    }
+
+    #[test]
     fn rejects_bad_contract() {
         assert!(load_contract("shared_pages = [0]").is_err());
     }
