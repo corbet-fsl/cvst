@@ -260,114 +260,114 @@
 #if cv-pages >= 3 [
   #cv-pagebreak()
 
-#v(13.125pt)
-#block(breakable: false)[
-  #block(above: 0pt, below: 0pt)[
-    #set par(spacing: 0pt)
-    // Recent Projects
-    #text(size: 12pt, weight: "bold", upper[Laufende Projekte])
-    #v(4.41pt)
-    #line(length: 100%, stroke: 0.5pt + black)
+  #v(13.125pt)
+  #block(breakable: false)[
+    #block(above: 0pt, below: 0pt)[
+      #set par(spacing: 0pt)
+      // Recent Projects
+      #text(size: 12pt, weight: "bold", upper[Laufende Projekte])
+      #v(4.41pt)
+      #line(length: 100%, stroke: 0.5pt + black)
+    ]
+    #v(7.35pt)
+    #cv-h[Incident Recovery & Cloud-Migration]
+    #v(6.3pt)
+    #cv-s[Solar-KMU · 2022]
+    #v(7.35pt)
+    #cv-b[Abgestürztes Kernsystem am ersten Tag wiederhergestellt; Felddienst und Vertrieb bis Ablösung gesichert]
+    #v(8.4pt)
+    #cv-b[Cloud-Migrationsoptionen bewertet; sechs- bis siebenstellige Fehlinvestition vermieden]
+    #v(10.5pt)
+    #cv-h[Digitaler Pivot zu hybridem Delivery]
+    #v(6.3pt)
+    #cv-s[Leadership Advisory Brand · 2022]
+    #v(7.35pt)
+    #cv-b[Digitale Delivery-Infrastruktur aufgebaut; On-Demand-Content als Alternative zu blockierten Seminaren]
+    #v(8.4pt)
+    #cv-b[Kundenpainpoints erfasst und Marketing-Funnel verbessert; Umsatz über hybrides Delivery diversifiziert]
+    #v(10.5pt)
+    #cv-h[Krypto-Infrastruktur-Beratung]
+    #v(6.3pt)
+    #cv-s[Mehrere Kunden · 2021]
+    #v(7.35pt)
+    #cv-b[Krypto-Pilot und Betriebsmodell dimensioniert und kalkuliert; Beschaffungs- und Betriebsrisiken gesteuert]
+    #v(8.4pt)
+    #cv-b[Überwachten, stabilen Mining-Betrieb termingerecht geliefert; Hashrate via Custom-Firmware optimiert]
+    #v(10.5pt)
+    #cv-h[Führungskräfte-Coaching Digitalisierung]
+    #v(6.3pt)
+    #cv-s[Frankfurt · 2022]
+    #v(7.35pt)
+    #cv-b[Performance-Leadership-Kurse für Online-Delivery überarbeitet]
+    #v(8.4pt)
+    #cv-b[Inhalte bei der Haufe Akademie platziert]
+    #v(10.5pt)
+    #cv-h[CareerVector (KI-Jobtracker)]
+    #v(6.3pt)
+    #cv-s[Eigenprojekt · seit 2025]
+    #v(7.35pt)
+    #cv-b[KI-nativen Full-Stack-Jobtracker mit Astro, React und Typst WASM entwickelt]
+    #v(8.4pt)
+    #cv-b[13+ LLM-Anbieter über Cloudflare Edge integriert]
   ]
-  #v(7.35pt)
-  #cv-h[Incident Recovery & Cloud-Migration]
-  #v(6.3pt)
-  #cv-s[Solar-KMU · 2022]
-  #v(7.35pt)
-  #cv-b[Abgestürztes Kernsystem am ersten Tag wiederhergestellt; Felddienst und Vertrieb bis Ablösung gesichert]
-  #v(8.4pt)
-  #cv-b[Cloud-Migrationsoptionen bewertet; sechs- bis siebenstellige Fehlinvestition vermieden]
-  #v(10.5pt)
-  #cv-h[Digitaler Pivot zu hybridem Delivery]
-  #v(6.3pt)
-  #cv-s[Leadership Advisory Brand · 2022]
-  #v(7.35pt)
-  #cv-b[Digitale Delivery-Infrastruktur aufgebaut; On-Demand-Content als Alternative zu blockierten Seminaren]
-  #v(8.4pt)
-  #cv-b[Kundenpainpoints erfasst und Marketing-Funnel verbessert; Umsatz über hybrides Delivery diversifiziert]
-  #v(10.5pt)
-  #cv-h[Krypto-Infrastruktur-Beratung]
-  #v(6.3pt)
-  #cv-s[Mehrere Kunden · 2021]
-  #v(7.35pt)
-  #cv-b[Krypto-Pilot und Betriebsmodell dimensioniert und kalkuliert; Beschaffungs- und Betriebsrisiken gesteuert]
-  #v(8.4pt)
-  #cv-b[Überwachten, stabilen Mining-Betrieb termingerecht geliefert; Hashrate via Custom-Firmware optimiert]
-  #v(10.5pt)
-  #cv-h[Führungskräfte-Coaching Digitalisierung]
-  #v(6.3pt)
-  #cv-s[Frankfurt · 2022]
-  #v(7.35pt)
-  #cv-b[Performance-Leadership-Kurse für Online-Delivery überarbeitet]
-  #v(8.4pt)
-  #cv-b[Inhalte bei der Haufe Akademie platziert]
-  #v(10.5pt)
-  #cv-h[CareerVector (KI-Jobtracker)]
-  #v(6.3pt)
-  #cv-s[Eigenprojekt · seit 2025]
-  #v(7.35pt)
-  #cv-b[KI-nativen Full-Stack-Jobtracker mit Astro, React und Typst WASM entwickelt]
-  #v(8.4pt)
-  #cv-b[13+ LLM-Anbieter über Cloudflare Edge integriert]
-]
 
-#v(13.125pt)
-#block(breakable: false)[
-  #block(above: 0pt, below: 0pt)[
-    #set par(spacing: 0pt)
-    // Selected Projects
-    #text(size: 12pt, weight: "bold", upper[Vergangene Projekte])
-    #v(4.41pt)
-    #line(length: 100%, stroke: 0.5pt + black)
-  ]
-  #v(7.35pt)
-  #cv-h[MBI-Versuch indisches IT-Outsourcing]
-  #v(6.3pt)
-  #cv-s[2022]
-  #v(7.35pt)
-  #cv-b[Akquisitionsziel identifiziert und Due Diligence durchgeführt]
-  #v(8.4pt)
-  #cv-b[MBI-Pitch für eine PE-Finanzierung strukturiert]
-  #v(10.5pt)
-  #cv-h[Personal Cloud Platform (apps.corbet.ch)]
-  #v(6.3pt)
-  #cv-s[seit 2024]
-  #v(7.35pt)
-  #cv-b[30+ Dienste und 100+ TB Speicher selbst gehostet]
-  #v(8.4pt)
-  #cv-b[Lokale LLMs, IdP und agentische KI integriert]
-  #v(10.5pt)
-  #cv-h[eCommerce-Betrieb (eBay-Wiederverkauf)]
-  #v(6.3pt)
-  #cv-s[2017 – 2025]
-  #v(7.35pt)
-  #cv-b[Fünfstelligen eBay-Betrieb mit automatisiertem Listing, Tracking und Logistik geführt]
-  #v(8.4pt)
-  #cv-b[Mini-ERP eingesetzt; Exit bei 80 % des Buchwerts umgesetzt]
-  #v(10.5pt)
-  #cv-h[Hardware- & Software-Services (KMU/B2C)]
-  #v(6.3pt)
-  #cv-s[2009 – 2024]
-  #v(7.35pt)
-  #cv-b[Profitablen Diagnose-, Custom-Build- und Reparaturservice für KMU und B2C betrieben]
-  #v(8.4pt)
-  #cv-b[Geschäftskontinuität trotz Umbrüchen gesichert]
-  #v(10.5pt)
-  #cv-h[Content-Strategie & Medien]
-  #v(6.3pt)
-  #cv-s[seit 2025]
-  #v(7.35pt)
-  #cv-b[Blog und Podcast zu KI, Finanzen und Strategie im Aufbau]
-  #v(8.4pt)
-  #cv-b[AV-Produktion am Swiss Python Summit übernommen]
-  #v(10.5pt)
-  #cv-h[Investmentportfolio]
-  #v(6.3pt)
-  #cv-s[seit 2021]
-  #v(7.35pt)
-  #cv-b[Portfolio über Aktien, Alternatives und Early-Stage-VC diversifiziert]
-  #v(8.4pt)
-  #cv-b[Value- und Momentum-Ansatz verfolgt]
+  #v(13.125pt)
+  #block(breakable: false)[
+    #block(above: 0pt, below: 0pt)[
+      #set par(spacing: 0pt)
+      // Selected Projects
+      #text(size: 12pt, weight: "bold", upper[Vergangene Projekte])
+      #v(4.41pt)
+      #line(length: 100%, stroke: 0.5pt + black)
+    ]
+    #v(7.35pt)
+    #cv-h[MBI-Versuch indisches IT-Outsourcing]
+    #v(6.3pt)
+    #cv-s[2022]
+    #v(7.35pt)
+    #cv-b[Akquisitionsziel identifiziert und Due Diligence durchgeführt]
+    #v(8.4pt)
+    #cv-b[MBI-Pitch für eine PE-Finanzierung strukturiert]
+    #v(10.5pt)
+    #cv-h[Personal Cloud Platform (apps.corbet.ch)]
+    #v(6.3pt)
+    #cv-s[seit 2024]
+    #v(7.35pt)
+    #cv-b[30+ Dienste und 100+ TB Speicher selbst gehostet]
+    #v(8.4pt)
+    #cv-b[Lokale LLMs, IdP und agentische KI integriert]
+    #v(10.5pt)
+    #cv-h[eCommerce-Betrieb (eBay-Wiederverkauf)]
+    #v(6.3pt)
+    #cv-s[2017 – 2025]
+    #v(7.35pt)
+    #cv-b[Fünfstelligen eBay-Betrieb mit automatisiertem Listing, Tracking und Logistik geführt]
+    #v(8.4pt)
+    #cv-b[Mini-ERP eingesetzt; Exit bei 80 % des Buchwerts umgesetzt]
+    #v(10.5pt)
+    #cv-h[Hardware- & Software-Services (KMU/B2C)]
+    #v(6.3pt)
+    #cv-s[2009 – 2024]
+    #v(7.35pt)
+    #cv-b[Profitablen Diagnose-, Custom-Build- und Reparaturservice für KMU und B2C betrieben]
+    #v(8.4pt)
+    #cv-b[Geschäftskontinuität trotz Umbrüchen gesichert]
+    #v(10.5pt)
+    #cv-h[Content-Strategie & Medien]
+    #v(6.3pt)
+    #cv-s[seit 2025]
+    #v(7.35pt)
+    #cv-b[Blog und Podcast zu KI, Finanzen und Strategie im Aufbau]
+    #v(8.4pt)
+    #cv-b[AV-Produktion am Swiss Python Summit übernommen]
+    #v(10.5pt)
+    #cv-h[Investmentportfolio]
+    #v(6.3pt)
+    #cv-s[seit 2021]
+    #v(7.35pt)
+    #cv-b[Portfolio über Aktien, Alternatives und Early-Stage-VC diversifiziert]
+    #v(8.4pt)
+    #cv-b[Value- und Momentum-Ansatz verfolgt]
   ]
 ]
 
@@ -376,105 +376,105 @@
 
   #v(13.125pt)
   #block(breakable: false)[
-  #block(above: 0pt, below: 0pt)[
-    #set par(spacing: 0pt)
-    #text(size: 12pt, weight: "bold", upper[Kompetenzen])
-    #v(4.41pt)
-    #line(length: 100%, stroke: 0.5pt + black)
-  ]
-  #v(7.35pt)
-  #cv-h[Finanzen]
-  #v(7.35pt)
-  #cv-b[Corporate Finance: Portfolio- und Kapitalallokationsanalyse; qualitative und quantitative Risikobewertung]
-  #v(8.4pt)
-  #cv-b[Finanzmodellierung: DCF, Multiples, Vergleichswerte; Szenario- und Sensitivitätsanalyse; EK und FK]
-  #v(8.4pt)
-  #cv-b[Transaktionen: Origination, Due Diligence und IMs; Strukturierung strategischer Wachstumsinvestitionen]
-  #v(10.5pt)
-  #cv-h[Strategie]
-  #v(7.35pt)
-  #cv-b[Führungsmaterialien: Board- und Investmentdecks; Abwägungen und Empfehlungen für Steerings]
-  #v(8.4pt)
-  #cv-b[Strategische Planung: TOMs, Roadmaps, KPI/OKR; Dashboards für Portfolio-Kadenz und Umsetzung]
-  #v(8.4pt)
-  #cv-b[Stakeholder-Management: Funktionsübergreifende Abstimmung und Führungserwartungen; termingerecht]
-  #v(10.5pt)
-  #cv-h[Technologie & KI]
-  #v(7.35pt)
-  #cv-b[KI-Innovation: On-Premise-, Hybrid- und Cloud-KI-MVPs; Deployment at scale]
-  #v(8.4pt)
-  #cv-b[Cloud-Exzellenz: Anforderungsanalyse und Prozessdiagnostik; regulatorische Anforderungen in Lösungen]
-  #v(8.4pt)
-  #cv-b[Quantitativ und Risiko: stochastische Modelle, Optionspreisbildung, VaR und Monte Carlo]
-  #v(10.5pt)
-  #cv-h[Menschen & Führung]
-  #v(7.35pt)
-  #cv-b[Coaching und Mentoring: Empathie mit aktiver Befähigung verbunden; Workshops und Resilienzaufbau]
-  #v(8.4pt)
-  #cv-b[Events und Netzwerk: Funktionsübergreifende Beziehungen in Finanz und IT; Konferenzorganisation]
-  #v(8.4pt)
-  #cv-b[Thought Leadership: Whitepapers und Vorträge; Medienpräsenz in KI, Finanzen und Strategie im Aufbau]
-  #v(13.125pt)
-  #block(above: 0pt, below: 0pt)[
-    #set par(spacing: 0pt)
-    #text(size: 12pt, weight: "bold", upper[Zwischenüberschrift I])
-    #v(4.41pt)
-    #line(length: 100%, stroke: 0.5pt + black)
-  ]
-  #v(7.35pt)
-  #cv-h[Produktivität & Zusammenarbeit]
-  #v(7.35pt)
-  #cv-b[Microsoft 365: Copilot, Excel und PowerPoint]
-  #v(8.4pt)
-  #cv-b[Google Workspace]
-  #v(8.4pt)
-  #cv-b[Jira, Confluence und CRM]
-  #v(10.5pt)
-  #cv-h[Forschung & Wissenschaft]
-  #v(7.35pt)
-  #cv-b[Experimentaldesign: Physik-Labormethodik, Hypothesentests, statistische Strenge (SPSS, R, Python)]
-  #v(8.4pt)
-  #cv-b[Data Engineering: ETL-Pipeline-Design, Datenbereinigung, Korrelationsanalyse, Messdatenbanken]
-  #v(8.4pt)
-  #cv-b[Wissenschaftliches Schreiben: Zwei Abschlussarbeiten (EN), eine (DE); Peer-Review-Methodik]
-  #v(10.5pt)
-  #cv-h[Transformation & Befähigung]
-  #v(7.35pt)
-  #cv-b[Transformation unter Hochdruck mit operativer Kontinuität ausbalanciert]
-  #v(8.4pt)
-  #cv-b[KI-Kompetenz durch Workshops und praxisnahes Coaching aufgebaut]
-  #v(8.4pt)
-  #cv-b[BANI-Unsicherheit in wechselnden Organisationskontexten navigiert]
-  #v(13.125pt)
-  #block(above: 0pt, below: 0pt)[
-    #set par(spacing: 0pt)
-    #text(size: 12pt, weight: "bold", upper[Zwischenüberschrift II])
-    #v(4.41pt)
-    #line(length: 100%, stroke: 0.5pt + black)
-  ]
-  #v(7.35pt)
-  #cv-h[Analytics & Daten]
-  #v(7.35pt)
-  #cv-b[Fortgeschrittenes Excel (VBA) und Executive Dashboards]
-  #v(8.4pt)
-  #cv-b[Power BI, Tableau und SQL]
-  #v(8.4pt)
-  #cv-b[Zeitreihen- und Szenarioanalysen]
-  #v(10.5pt)
-  #cv-h[KI & Automatisierung]
-  #v(7.35pt)
-  #cv-b[Python und Java (OOP)]
-  #v(8.4pt)
-  #cv-b[GenAI-Tooling mit Claude Code und Copilot]
-  #v(8.4pt)
-  #cv-b[n8n-Automatisierung und Reporting-Pipelines]
-  #v(10.5pt)
-  #cv-h[Kommunikation & Verhandlung]
-  #v(7.35pt)
-  #cv-b[Rhetorik und Verhandlung für klare Auftritte]
-  #v(8.4pt)
-  #cv-b[Performance Leadership, PR und Medienarbeit]
-  #v(8.4pt)
-  #cv-b[Krisenkommunikation für IT- und organisatorische Veränderungsprozesse]
+    #block(above: 0pt, below: 0pt)[
+      #set par(spacing: 0pt)
+      #text(size: 12pt, weight: "bold", upper[Kompetenzen])
+      #v(4.41pt)
+      #line(length: 100%, stroke: 0.5pt + black)
+    ]
+    #v(7.35pt)
+    #cv-h[Finanzen]
+    #v(7.35pt)
+    #cv-b[Corporate Finance: Portfolio- und Kapitalallokationsanalyse; qualitative und quantitative Risikobewertung]
+    #v(8.4pt)
+    #cv-b[Finanzmodellierung: DCF, Multiples, Vergleichswerte; Szenario- und Sensitivitätsanalyse; EK und FK]
+    #v(8.4pt)
+    #cv-b[Transaktionen: Origination, Due Diligence und IMs; Strukturierung strategischer Wachstumsinvestitionen]
+    #v(10.5pt)
+    #cv-h[Strategie]
+    #v(7.35pt)
+    #cv-b[Führungsmaterialien: Board- und Investmentdecks; Abwägungen und Empfehlungen für Steerings]
+    #v(8.4pt)
+    #cv-b[Strategische Planung: TOMs, Roadmaps, KPI/OKR; Dashboards für Portfolio-Kadenz und Umsetzung]
+    #v(8.4pt)
+    #cv-b[Stakeholder-Management: Funktionsübergreifende Abstimmung und Führungserwartungen; termingerecht]
+    #v(10.5pt)
+    #cv-h[Technologie & KI]
+    #v(7.35pt)
+    #cv-b[KI-Innovation: On-Premise-, Hybrid- und Cloud-KI-MVPs; Deployment at scale]
+    #v(8.4pt)
+    #cv-b[Cloud-Exzellenz: Anforderungsanalyse und Prozessdiagnostik; regulatorische Anforderungen in Lösungen]
+    #v(8.4pt)
+    #cv-b[Quantitativ und Risiko: stochastische Modelle, Optionspreisbildung, VaR und Monte Carlo]
+    #v(10.5pt)
+    #cv-h[Menschen & Führung]
+    #v(7.35pt)
+    #cv-b[Coaching und Mentoring: Empathie mit aktiver Befähigung verbunden; Workshops und Resilienzaufbau]
+    #v(8.4pt)
+    #cv-b[Events und Netzwerk: Funktionsübergreifende Beziehungen in Finanz und IT; Konferenzorganisation]
+    #v(8.4pt)
+    #cv-b[Thought Leadership: Whitepapers und Vorträge; Medienpräsenz in KI, Finanzen und Strategie im Aufbau]
+    #v(13.125pt)
+    #block(above: 0pt, below: 0pt)[
+      #set par(spacing: 0pt)
+      #text(size: 12pt, weight: "bold", upper[Zwischenüberschrift I])
+      #v(4.41pt)
+      #line(length: 100%, stroke: 0.5pt + black)
+    ]
+    #v(7.35pt)
+    #cv-h[Produktivität & Zusammenarbeit]
+    #v(7.35pt)
+    #cv-b[Microsoft 365: Copilot, Excel und PowerPoint]
+    #v(8.4pt)
+    #cv-b[Google Workspace]
+    #v(8.4pt)
+    #cv-b[Jira, Confluence und CRM]
+    #v(10.5pt)
+    #cv-h[Forschung & Wissenschaft]
+    #v(7.35pt)
+    #cv-b[Experimentaldesign: Physik-Labormethodik, Hypothesentests, statistische Strenge (SPSS, R, Python)]
+    #v(8.4pt)
+    #cv-b[Data Engineering: ETL-Pipeline-Design, Datenbereinigung, Korrelationsanalyse, Messdatenbanken]
+    #v(8.4pt)
+    #cv-b[Wissenschaftliches Schreiben: Zwei Abschlussarbeiten (EN), eine (DE); Peer-Review-Methodik]
+    #v(10.5pt)
+    #cv-h[Transformation & Befähigung]
+    #v(7.35pt)
+    #cv-b[Transformation unter Hochdruck mit operativer Kontinuität ausbalanciert]
+    #v(8.4pt)
+    #cv-b[KI-Kompetenz durch Workshops und praxisnahes Coaching aufgebaut]
+    #v(8.4pt)
+    #cv-b[BANI-Unsicherheit in wechselnden Organisationskontexten navigiert]
+    #v(13.125pt)
+    #block(above: 0pt, below: 0pt)[
+      #set par(spacing: 0pt)
+      #text(size: 12pt, weight: "bold", upper[Zwischenüberschrift II])
+      #v(4.41pt)
+      #line(length: 100%, stroke: 0.5pt + black)
+    ]
+    #v(7.35pt)
+    #cv-h[Analytics & Daten]
+    #v(7.35pt)
+    #cv-b[Fortgeschrittenes Excel (VBA) und Executive Dashboards]
+    #v(8.4pt)
+    #cv-b[Power BI, Tableau und SQL]
+    #v(8.4pt)
+    #cv-b[Zeitreihen- und Szenarioanalysen]
+    #v(10.5pt)
+    #cv-h[KI & Automatisierung]
+    #v(7.35pt)
+    #cv-b[Python und Java (OOP)]
+    #v(8.4pt)
+    #cv-b[GenAI-Tooling mit Claude Code und Copilot]
+    #v(8.4pt)
+    #cv-b[n8n-Automatisierung und Reporting-Pipelines]
+    #v(10.5pt)
+    #cv-h[Kommunikation & Verhandlung]
+    #v(7.35pt)
+    #cv-b[Rhetorik und Verhandlung für klare Auftritte]
+    #v(8.4pt)
+    #cv-b[Performance Leadership, PR und Medienarbeit]
+    #v(8.4pt)
+    #cv-b[Krisenkommunikation für IT- und organisatorische Veränderungsprozesse]
   ]
 ]

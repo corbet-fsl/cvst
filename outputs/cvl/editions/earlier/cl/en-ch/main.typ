@@ -5,9 +5,10 @@
 #application-header(locale: "en-ch")
 
 #v(13.125pt)
-#grid(columns: (1fr, auto), align: (left, right),
-  text(size: 12pt, weight: "bold")[Application for Investment Associate],
-  text(size: 10.5pt)[August 25, 2026],
+#grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  text(size: 12pt, weight: "bold")[Application for Investment Associate], text(size: 10.5pt)[August 25, 2026],
 )
 #v(4.41pt)
 #line(length: 100%, stroke: 0.5pt + black)
@@ -39,25 +40,25 @@
 #v(13.125pt)
 #block(breakable: false)[
   #block(fill: rgb("#f8fafc"), stroke: (left: 2.5pt + rgb("#1e3a5f")), inset: 8pt, radius: 2pt, width: 100%)[
-  #cv-h[Infrastructure & Energy]
-  #v(7.35pt)
-  #cv-b[BESS project finance, IRR/NPV/DSCR modeling, bank-ready refinancing]
-  #v(10.5pt)
-  #cv-h[Quantitative]
-  #v(7.35pt)
-  #cv-b[MSc Physics (1.0), financial modeling (DCF, IRR, NPV), scenario analysis]
-  #v(10.5pt)
-  #cv-h[Executive Communication]
-  #v(7.35pt)
-  #cv-b[SteerCo preparation (Swisscom), board-level decks, cross-functional alignment]
-  #v(10.5pt)
-  #cv-h[AI & Risk]
-  #v(7.35pt)
-  #cv-b[AI risk analysis (Airbus), automated pipelines, regulatory AI governance]
-  #v(10.5pt)
-  #cv-h[Entrepreneurship]
-  #v(7.35pt)
-  #cv-b[Co-founded consulting practice; mid six-figure revenue across 4 countries]
+    #cv-h[Infrastructure & Energy]
+    #v(7.35pt)
+    #cv-b[BESS project finance, IRR/NPV/DSCR modeling, bank-ready refinancing]
+    #v(10.5pt)
+    #cv-h[Quantitative]
+    #v(7.35pt)
+    #cv-b[MSc Physics (1.0), financial modeling (DCF, IRR, NPV), scenario analysis]
+    #v(10.5pt)
+    #cv-h[Executive Communication]
+    #v(7.35pt)
+    #cv-b[SteerCo preparation (Swisscom), board-level decks, cross-functional alignment]
+    #v(10.5pt)
+    #cv-h[AI & Risk]
+    #v(7.35pt)
+    #cv-b[AI risk analysis (Airbus), automated pipelines, regulatory AI governance]
+    #v(10.5pt)
+    #cv-h[Entrepreneurship]
+    #v(7.35pt)
+    #cv-b[Co-founded consulting practice; mid six-figure revenue across 4 countries]
   ]
 ]
 

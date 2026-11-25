@@ -5,9 +5,10 @@
 #application-header(locale: "de-ch")
 
 #v(13.125pt)
-#grid(columns: (1fr, auto), align: (left, right),
-  text(size: 12pt, weight: "bold")[Bewerbung als Investment Associate],
-  text(size: 10.5pt)[25. August 2026],
+#grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  text(size: 12pt, weight: "bold")[Bewerbung als Investment Associate], text(size: 10.5pt)[25. August 2026],
 )
 #v(4.41pt)
 #line(length: 100%, stroke: 0.5pt + black)
@@ -39,25 +40,25 @@
 #v(13.125pt)
 #block(breakable: false)[
   #block(fill: rgb("#f8fafc"), stroke: (left: 2.5pt + rgb("#1e3a5f")), inset: 8pt, radius: 2pt, width: 100%)[
-  #cv-h[Infrastruktur & Energie]
-  #v(7.35pt)
-  #cv-b[BESS-Projektfinanzierung, IRR/NPV/DSCR-Modellierung, bankfähige Refinanzierung]
-  #v(10.5pt)
-  #cv-h[Quantitativ]
-  #v(7.35pt)
-  #cv-b[MSc Physik (1,0), Finanzmodellierung (DCF, IRR, NPV), Szenarioanalyse]
-  #v(10.5pt)
-  #cv-h[Führungskommunikation]
-  #v(7.35pt)
-  #cv-b[SteerCo-Vorbereitung (Swisscom), GL-Entscheidungsvorlagen, bereichsübergreifend]
-  #v(10.5pt)
-  #cv-h[KI & Risiko]
-  #v(7.35pt)
-  #cv-b[KI-Risikoanalyse (Airbus), automatisierte Pipelines, regulatorische KI-Governance]
-  #v(10.5pt)
-  #cv-h[Unternehmertum]
-  #v(7.35pt)
-  #cv-b[Beratungspraxis mitgegründet; sechsstelliger Umsatz in 4 Ländern aufgebaut]
+    #cv-h[Infrastruktur & Energie]
+    #v(7.35pt)
+    #cv-b[BESS-Projektfinanzierung, IRR/NPV/DSCR-Modellierung, bankfähige Refinanzierung]
+    #v(10.5pt)
+    #cv-h[Quantitativ]
+    #v(7.35pt)
+    #cv-b[MSc Physik (1,0), Finanzmodellierung (DCF, IRR, NPV), Szenarioanalyse]
+    #v(10.5pt)
+    #cv-h[Führungskommunikation]
+    #v(7.35pt)
+    #cv-b[SteerCo-Vorbereitung (Swisscom), GL-Entscheidungsvorlagen, bereichsübergreifend]
+    #v(10.5pt)
+    #cv-h[KI & Risiko]
+    #v(7.35pt)
+    #cv-b[KI-Risikoanalyse (Airbus), automatisierte Pipelines, regulatorische KI-Governance]
+    #v(10.5pt)
+    #cv-h[Unternehmertum]
+    #v(7.35pt)
+    #cv-b[Beratungspraxis mitgegründet; sechsstelliger Umsatz in 4 Ländern aufgebaut]
   ]
 ]
 

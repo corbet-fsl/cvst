@@ -1,5 +1,5 @@
 // Shared application header backed by canonical profile data.
-#import "../profile.typ": profile, localized-profile
+#import "../profile.typ": localized-profile, profile
 
 #let application-header(locale: "en-ch") = {
   let localized = localized-profile.at(locale)
