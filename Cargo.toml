@@ -1,6 +1,6 @@
 [package]
 name = "cvst"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2024"
 rust-version = "1.94"
 description = "CareerVector style library: style catalogue, contracts, Typst templates and style assets"
@@ -14,7 +14,7 @@ build = "build.rs"
 # fonts stay in the repository (fonts come from ctypst `document-fonts`).
 # The owner's real CV records (content.toml, wording.toml, entries, drafts) ship ON PURPOSE: they are the
 # marketing showcase. Never narrow this list to exclude them; see AGENTS.md.
-include = ["/src", "/build.rs", "/outputs/**/*.toml", "/outputs/**/*.typ", "/outputs/**/*.md", "/.agent/typst/**/*.typ", "/.agent/typst/**/*.toml", "/.agent/typst/**/*.md", "/.agent/typst/**/*.json", "/.agent/typst/**/*.txt", "/README.md", "/LICENSE.md", "/LICENSES"]
+include = ["/src", "/build.rs", "/outputs/**/*.toml", "/outputs/**/*.typ", "/outputs/**/*.md", "/outputs/**/*.json", "/outputs/**/*.txt", "/.agent/typst/**/*.typ", "/.agent/typst/**/*.toml", "/.agent/typst/**/*.md", "/.agent/typst/**/*.json", "/.agent/typst/**/*.txt", "/README.md", "/LICENSE.md", "/LICENSES"]
 
 [dependencies]
 anyhow = "1.0"
