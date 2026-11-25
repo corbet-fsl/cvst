@@ -27,6 +27,13 @@ the crate's source directory, so the binary files are only there in a repository
 checkout. The directory layout is also what an npm or JSR package would ship; that
 package is not published.
 
+## Showcase
+
+The styles are shown with the owner's real CV and cover letter. That content
+(the `content.toml` and `wording.toml` records, the Harvard entries, the cluster
+drafts and the rendered previews) is part of the library on purpose and ships
+in the crate. It is not test data to be replaced. See `AGENTS.md`.
+
 ## Users
 
 `ccvl` depends on cvst (feature `core`, also pulled in by `render` and `doc`) and

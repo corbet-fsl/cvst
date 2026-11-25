@@ -12,6 +12,8 @@ categories = ["template-engine"]
 build = "build.rs"
 # Only the text files (toml, typ, md, json) ship: the build embeds them. Showcase PDF/PNG renders and the
 # fonts stay in the repository (fonts come from ctypst `document-fonts`).
+# The owner's real CV records (content.toml, wording.toml, entries, drafts) ship ON PURPOSE: they are the
+# marketing showcase. Never narrow this list to exclude them; see AGENTS.md.
 include = ["/src", "/build.rs", "/outputs/**/*.toml", "/outputs/**/*.typ", "/outputs/**/*.md", "/.agent/typst/**/*.typ", "/.agent/typst/**/*.toml", "/.agent/typst/**/*.md", "/.agent/typst/**/*.json", "/README.md", "/LICENSE.md", "/LICENSES"]
 
 [dependencies]
