@@ -20,7 +20,7 @@ crates.io as [`cvst`](https://crates.io/crates/cvst).
   `validate_contract()`, `normalize_locale()`, plus `file()`/`files()` for the embedded
   text files.
 
-Packaging: the crate embeds the text files (TOML, Typst, Markdown, JSON), about
+Packaging: the crate embeds the text files (TOML, Typst, Markdown, JSON, TXT), about
 100 KB. Binary assets (showcase PDF and PNG renders, fonts) stay in the repository
 and are not published; fonts come from ctypst's `document-fonts`. `STYLES_ROOT` is
 the crate's source directory, so the binary files are only there in a repository
@@ -36,11 +36,10 @@ in the crate. It is not test data to be replaced. See `AGENTS.md`.
 
 ## Users
 
-`ccvl` depends on cvst (feature `core`, also pulled in by `render` and `doc`) and
-re-exports `validate_contract` and `normalize_locale`. CareerVector's CLI still
-renders from its own workspace copy of the style trees (`careervector-cli/outputs/`
-and `.agent/typst/`), not from this crate's files. Until it reads them from cvst,
-keep both identical (see Tests).
+`ccvl` depends on cvst (feature `core`, also pulled in by `render` and `doc`) and hands the
+styles to every product through its `styles` module. CareerVector (CLI, TUI, web) depends only on
+ccvl and carries no copy: `cv init` and `cv update` write these trees, the owner's showcase CV
+included, into the user's workspace.
 
 ## Canonical home
 
@@ -49,11 +48,8 @@ the styles. Dependencies use caret ranges; nothing is vendored or pinned.
 
 ## Tests
 
-`cargo test` loads and validates every style contract in the catalogue. With
-`CVST_COPY_DIR` set to a directory that holds a copy of `outputs/` and
-`.agent/typst/` (today `careervector-cli/` in a CareerVector checkout), it also
-checks that every file is byte-identical to the copy. CI cannot see that private
-repository, so this check runs only locally.
+`cargo test` loads and validates every style contract in the catalogue and checks that the
+engine package files are embedded.
 
 ## Licence
 

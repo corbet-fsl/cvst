@@ -146,6 +146,19 @@ mod tests {
     }
 
     #[test]
+    fn engine_package_files_are_embedded() {
+        for path in [
+            ".agent/typst/typst.toml",
+            ".agent/typst/lib.typ",
+            ".agent/typst/document-settings.json",
+            ".agent/typst/fonts/NOTICE.md",
+            ".agent/typst/fonts/OFL-1.1.txt",
+        ] {
+            assert!(file(path).is_some(), "{path} is not embedded");
+        }
+    }
+
+    #[test]
     fn rejects_bad_contract() {
         assert!(load_contract("shared_pages = [0]").is_err());
     }

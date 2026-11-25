@@ -1,4 +1,4 @@
-//! Generates the table of embedded text style files (`.toml`, `.typ`, `.md`).
+//! Generates the table of embedded text style files (`.toml`, `.typ`, `.md`, `.json`, `.txt`).
 //! Binary assets (PDF, PNG, fonts) stay on disk next to the crate; see `STYLES_ROOT`.
 use std::fmt::Write as _;
 use std::path::Path;
@@ -15,7 +15,7 @@ fn walk(root: &Path, dir: &Path, out: &mut Vec<String>) {
             walk(root, &path, out);
         } else if matches!(
             path.extension().and_then(|e| e.to_str()),
-            Some("toml" | "typ" | "md")
+            Some("toml" | "typ" | "md" | "json" | "txt")
         ) {
             out.push(
                 path.strip_prefix(root)
